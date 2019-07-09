@@ -20,13 +20,14 @@ class Register extends Component {
     render () {
         return (
             <Container>
+                <Text>Register</Text>
                 <TextInput style={{height: 40}} placeholder='UserName'
                 onChangeText={userName => this.setState({userName})} />
             
                 <TextInput style={{height: 40}} placeholder='Password'
                 onChangeText={password => this.setState({password})} />
      
-                <Button onPress={this.handleSubmit.bind(this)} title='Register'/>
+                <Button onPress={this.handleSubmit.bind(this)} title='Go'/>
                 <Button onPress={e => this.props.history.push('/')} title='Sign-in'/>
             
            </Container> 

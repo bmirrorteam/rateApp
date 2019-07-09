@@ -41,13 +41,14 @@ class SignIn extends Component {
       render () {
           return (
             <Container>
+                <Text>Sign In</Text>
                 <TextInput style={{height: 40}} placeholder='UserName'
                 onChangeText={userName => this.setState({userName})} />
             
                 <TextInput style={{height: 40}} placeholder='Password'
                 onChangeText={password => this.setState({password})} />
-     
-                <Button onPress={this.handleSubmit.bind(this)} title='Sign-in'/>
+        
+                <Button onPress={this.handleSubmit.bind(this)} title='Go'/>
                 <Button onPress={e => this.props.history.push('/register')} title='Register'/>
             
            </Container> 
